@@ -1,0 +1,265 @@
+/*GLOBAL STYLES*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    margin: 0;
+}
+
+/*HEADER + FOOTER*/
+
+header, footer {
+    background-color: #0D3B66;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+/*LOGO*/
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/*NAVIGATION*/
+
+nav {
+    text-align: center;
+    margin: 15px 0;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #49697F;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #0D3B66;
+}
+
+/*BUTTONS*/
+
+button,
+.btn {
+    display: inline-block;
+    background-color: #49697F;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #0D3B66;
+}
+
+/*LAYOUT*/
+
+.welcome {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 20px;
+}
+
+.featured,
+.quick-tips {
+    width: 45%;
+}
+
+/*CARDS (RECIPES / HOME)*/
+
+.card {
+    display: flex;
+    background-color: #FFFFFF;
+    border: 2px solid #A6B3B5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 40%;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+/*QUICK TIPS BOX*/
+
+.quick-tips {
+    background-color: #E6EEF2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*TIP PAGE*/
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tip-card {
+    width: 30%;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.img1, .img2, .img3 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tips-section {
+    background-color: #A6B3B5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.tips-section ul {
+    padding-left: 20px;
+}
+
+.tips-section li {
+    margin-bottom: 8px;
+}
+
+/*CONTACT / FORMS*/
+
+.contact-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #E6EEF2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-container label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #A6B3B5;
+    border-radius: 5px;
+}
+
+/*COMMENTS*/
+
+.comments-section {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+#commentList {
+    margin-top: 15px;
+}
+
+.comment {
+    background-color: #FFFFFF;
+    border: 2px solid #A6B3B5;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/*STEP CHECKLIST*/
+
+.step-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.step-list li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.step-list input {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: #49697F;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .menu-toggle {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        width: 90%;
+        margin: 8px auto;
+    }
+}

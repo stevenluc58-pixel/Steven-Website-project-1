@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact - Everyday Meals</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+
+		<header>
+			<div class="logo-title">
+				<img src="logo.jpg" alt="Everyday Meals Logo" class="logo">
+				<h1>Everyday Meals</h1>
+			</div>
+			<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="Recipes.html">Popular Recipes</a>
+				<a href="stepbystep.html">Step-by-Step Guides</a>
+				<a href="tips.html">Tips & Tricks</a>
+				<a href="mealplanner.html">Meal Planner</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="welcome">
+				<h2>Contact & Community</h2>
+				<p>Share your thoughts, tips, or recipes with others!</p>
+			</section>
+			<section class="contact-container">
+				<h2>Share Your Thoughts</h2>
+				<p>Post your thoughts so others can see them.</p>
+				<form id="commentForm">
+					<label>Name:</label>
+					<input type="text" id="commentName" required>
+					<label>Your Message:</label>
+					<textarea id="commentText" rows="4" required></textarea>
+					<div id="errorMsg" class="error"></div>
+					<button type="submit">Post Message</button>
+				</form>
+			</section>
+			<section class="comments-section">
+				<h3>Community Posts</h3>
+				<div id="commentList"></div>
+			</section>
+			<section class="contact-container">
+				<h2>Send Me a Private Message</h2>
+				<p>If you have questions, suggestions, or just want to reach out, send me a message below.</p>
+				<form id="privateForm">
+					<label>Name:</label>
+					<input type="text" id="privateName" required>
+					<label>Email:</label>
+					<input type="email" id="privateEmail" required>
+					<label>Phone Number:</label>
+					<input type="tel" id="privatePhone" placeholder="Optional">
+					<label>Your Message:</label>
+					<textarea id="privateMessage" rows="5" required></textarea>
+					<button type="submit">Send Message</button>
+				</form>
+				<div id="privateSuccess" style="display:none; margin-top:10px; color:green;">
+					Message sent successfully!
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; 2026 Everyday Meals</p>
+		</footer>
+
+		<script src="script.js"></script>
+
+	</body>
+</html>
